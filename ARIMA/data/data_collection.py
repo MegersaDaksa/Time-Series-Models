@@ -9,4 +9,4 @@ def get_sp500_data(start_date, end_date):
 
 # Example usage
 data = get_sp500_data('2010-01-01', '2024-01-01')
-data.to_csv('data/sp500.csv')  # Save to CSV
+data.to_csv('../data/sp500.csv')  # Save to CSV
