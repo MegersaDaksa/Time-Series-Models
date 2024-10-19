@@ -7,6 +7,11 @@ def get_sp500_data(start_date, end_date):
     sp500 = yf.download('^GSPC', start=start_date, end=end_date)
     return sp500
 
+def fetch_sp500_data():
+    sp500 = yf.Ticker("^GSPC")
+    data = sp500.history(period="max")
+    return data[['Close']]
+
 # Example usage
 data = get_sp500_data('2010-01-01', '2024-01-01')
 data.to_csv('../data/sp500.csv')  # Save to CSV
