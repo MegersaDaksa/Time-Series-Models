@@ -5,6 +5,3 @@ def build_arima_model(data):
     model = ARIMA(data['Close'], order=(5, 1, 0))  # (p, d, q) values
     model_fit = model.fit()
     return model_fit
-
-def predict_future(model_fit, steps=10):
-    return model_fit.forecast(steps=steps)
