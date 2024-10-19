@@ -1,0 +1,30 @@
+ARIMA_SP500/
+│
+├── src/
+│   ├── data/
+│   │   ├── data_gathering.py     # Script to fetch S&P 500 data
+│   │   ├── data_cleaning.py      # Script to clean and preprocess data
+│   │   └── data_pipeline.py      # Script for ETL process
+│   │
+│   ├── models/
+│   │   ├── arima_model.py        # Script for ARIMA model creation
+│   │   ├── model_evaluation.py   # Script for model evaluation metrics
+│   │   └── model_update.py       # Script for model updates with new data
+│   │
+│   └── utils/
+│       ├── helpers.py            # Utility functions like date conversion, etc.
+│       └── config.py             # Configuration settings
+│
+├── tests/
+│   ├── test_arima_model.py       # Unit test for ARIMA model
+│   ├── test_data_pipeline.py     # Unit test for data pipeline
+│   └── test_integration.py       # Integration test for model with pipeline
+│
+├── .gitignore                    # Ignore unnecessary files in GitHub
+├── README.md                     # Description of the project
+├── requirements.txt              # Required Python libraries
+├── setup.py                      # Package setup
+└── databricks_workflow/
+    ├── job_config.json           # Databricks job configuration
+    ├── workflow_script.py        # Script to run the workflow in Databricks
+    └── deployment_pipeline.py    # Pipeline for deploying the model in Databricks

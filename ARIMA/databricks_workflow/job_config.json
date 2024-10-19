@@ -1,0 +1,16 @@
+{
+    "name": "ARIMA_SP500_Model",
+    "new_cluster": {
+      "spark_version": "7.3.x-scala2.12",
+      "node_type_id": "i3.xlarge",
+      "num_workers": 2
+    },
+    "libraries": [
+      {"pypi": {"package": "yfinance"}},
+      {"pypi": {"package": "statsmodels"}}
+    ],
+    "notebook_task": {
+      "notebook_path": "/Users/username/ARIMA_SP500_Model"
+    }
+  }
+  
