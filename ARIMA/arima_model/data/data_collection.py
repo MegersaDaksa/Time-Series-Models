@@ -1,6 +1,7 @@
 import yfinance as yf
 import pandas as pd
 
+
 def get_sp500_data(start_date, end_date):
     """ Fetch historical SP500 data from Yahoo Finance """
     sp500 = yf.download('^GSPC', start=start_date, end=end_date)
